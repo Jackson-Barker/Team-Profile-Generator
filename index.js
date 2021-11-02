@@ -2,11 +2,13 @@ const Manager = require("./lib/manager")
 const Engineer = require("./lib/engineer")
 const Intern = require("./lib/intern")
 
+// node
 const inquirer = require('inquirer');
 const fs = require('fs')
 
 const teamArray = []
 
+// manager prompt 
 const managerPrompt = () => {
     return inquirer.prompt([
         {
@@ -44,38 +46,6 @@ const employeePrompt = () => {
         ])
 }
 
-const generateHTML = ({ name, id, email}) =>
-  `<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-  <title>Document</title>
-</head>
-<body>
-  <div class="jumbotron jumbotron-fluid">
-  <div class="container">
-    <h1 class="display-4">Team Profiles!</h1>
-  </div>
-</div>
-
-<div class='card employee-card'>
-    <div class='card-header'>
-        <h2 class='card-title'>${name}</j3>
-        <h3 class='card-title><<i class="fas fa-glasses mr-2"></i></h3>
-    </div>
-    <div class="card-body">
-    <ul class="list-group">
-        <li class="list-group-item">${id}</li>
-        <li class="list-group-item">Email: <a href="mailto:${email}">${email}</a></li>    
-    </ul>
-</div>
-</div>
-
-</body>
-</html>`;
-
 const init = () => {
     managerPrompt()
     .then(answer => {
@@ -88,6 +58,7 @@ const init = () => {
       .catch((err) => console.error(err));
   };
   
+//   ask manager if they want to add more employees
 function menu(){
     inquirer.prompt({
         type:"confirm",
@@ -118,6 +89,9 @@ function menu(){
          }
          else {
              console.log(teamArray)
+             for (let index = 0; index < teamArray.length; index++) {
+                 const employeeCards = array[index];
+             }
             //  for loop on team array 
             // import inside body and cards
          
@@ -125,6 +99,7 @@ function menu(){
      })
 }
 
+// engineer prompt 
 const engineerPrompt = () => {
     return inquirer.prompt([
         {
@@ -150,6 +125,7 @@ const engineerPrompt = () => {
      ])
 }
 
+// intern prompt 
 const internPrompt = () => {
     return inquirer.prompt([
         {
