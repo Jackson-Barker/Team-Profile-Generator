@@ -106,22 +106,22 @@ const engineerPrompt = () => {
         {
             type: 'input',
             name: 'name',
-            message:'What is your name?'
+            message:'What is the engineers name?'
         },
         {
             type: 'input',
             name: 'id',
-            message:'What is your ID?'
+            message:'What is the engineers ID?'
         },
         {
             type: 'input',
             name: 'email',
-            message:'What is your email?'
+            message:'What is the engineers email?'
         },
         {
             type: 'input',
             name: 'gitHub',
-            message:'What is your gitHub user name?'
+            message:'What is the engineers gitHub user name?'
          },
      ])
 }
@@ -132,22 +132,22 @@ const internPrompt = () => {
         {
             type: 'input',
             name: 'name',
-            message:'What is your name?'
+            message:'What is the interns name?'
         },
         {
             type: 'input',
             name: 'id',
-            message:'What is your ID?'
+            message:'What is the interns ID?'
         },
         {
             type: 'input',
             name: 'email',
-            message:'What is your email?'
+            message:'What is the interns email?'
         },
         {
             type: 'input',
             name: 'school',
-            message:'What college did you attend?'
+            message:'What college did the intern attend?'
          },
      ])
 }
