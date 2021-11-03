@@ -1,19 +1,33 @@
-const Engineer = require(`./lib/engineer`)
+const Employee = require(`../lib/employee`)
 
-test('creates engineer object', () => {
-    const engineer = new engineer("Jackson", 45, "barkerwjackson@gmail.com", "Jackson-Barker")
+test('creates employee object', () => {
+    const employee = new Employee("Jackson", 45, "barkerwjackson@gmail.com")
 
-        expect(engineer.gitHub).toEqual(expect.any(string));
+        expect(employee.name).toEqual(expect.any(String));
+        expect(employee.id).toEqual(expect.any(Number));
+        expect(employee.email).toEqual(expect.any(String));
 });
 
-test('retrieves engineer github account name', () => {
-    const engineer = new engineer("Jackson", 45, "barkerwjackson@gmail.com", "Jackson-Barker")
+test('retrieves employee name', () => {
+    const employee = new Employee("Jackson", 45, "barkerwjackson@gmail.com")
 
-        expect(engineer.gitHub()).toEqual(expect.stringContaining(engineer.gitHub.toString));
+        expect(employee.name).toEqual(expect.any(String));
+})
+
+test('retrieves employee email', () => {
+    const employee = new Employee("Jackson", 45, "barkerwjackson@gmail.com")
+
+        expect(employee.email).toEqual(expect.any(String));
+})
+
+test('retrieves employee id', () => {
+    const employee = new Employee("Jackson", 45, "barkerwjackson@gmail.com")
+
+        expect(employee.id).toEqual(expect.any(Number));
 })
 
 test('employee role', () => {
-    const engineer = new engineer("Jackson", 45, "barkerwjackson@gmail.com", "Jackson-Barker");
+    const employee = new Employee("Jackson", 45, "barkerwjackson@gmail.com");
 
-        expect(engineer.getRole()).toEqual('engineer');
+        expect(employee.getRole()).toEqual('Employee');
 })

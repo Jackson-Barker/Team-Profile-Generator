@@ -90,7 +90,8 @@ function menu(){
          else {
              console.log(teamArray)
              for (let index = 0; index < teamArray.length; index++) {
-                 const employeeCards = array[index];
+                 const element = array[index];
+                 
              }
             //  for loop on team array 
             // import inside body and cards
