@@ -1,19 +1,18 @@
 # Team Profile Generator
+Created by: Jackson Barker
+
  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ## Description
-command-line application that takes in information about employees on a software engineering team, then generates an HTML webpage that displays summaries for each person.
+This is a team profile generator command-line application that takes in information about employees on a software engineering team, then generates an HTML webpage that displays summaries for each person.
 ## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)
-- [Credits](#credits)
 - [License](#license)
 - [Github Profile](#github)
 - [Email](#email)
 - [Screenshot](#screenshot)
-- [Contribute](#contribution)
-- [Tests](#tests)
 ## Installation
-Your application should use [Jest](https://www.npmjs.com/package/jest) for running the unit tests and [Inquirer](https://www.npmjs.com/package/inquirer) for collecting input from the user. The application will be invoked by using the following command:
+This application requires [Inquirer](https://www.npmjs.com/package/inquirer) for collecting input from the user. The application will be invoked by using the following command:
 
 ```bash
 node index.js
@@ -37,9 +36,9 @@ WHEN I decide to finish building my team
 THEN I exit the application, and the HTML is generated
 ## License
 MIT
-## Github Profile
+## Github 
  <a href="https://github.com/Jackson-Barker">GitHub Profile Link</a> 
-## Email Address
+## Email
 <a href="mailto:barkerwjackson@gmail.com">Email</a>
 ## Screenshot
 
